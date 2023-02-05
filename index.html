@@ -5,32 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./app.css">
+    <link rel="stylesheet" href="./css/app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://kit.fontawesome.com/13e80230b6.css" crossorigin="anonymous">
     <title>ICGEWE</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <!-- <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__listItem"><a href="./index.html">Home</a></li>
-            <li class="nav__listItem"><a href="./about.html">About</a></li>
-        </ul>
-    </nav> -->
+    <nav class="nav">
+        <a class="nav-link" href="#header" data-text="home">Home</a>
+        <a class="nav-link" href="#about" data-text="about">About</a>
+        <a class="nav-link" href="./about.html" data-text="organiser">Organiser</a>
+        <a class="nav-link" href="#topics" data-text="topics">Topics</a>
+        <a class="nav-link" href="#timeline" data-text="timeline">Timeline</a>
+    </nav>
     <!-- Navbar Ends -->
+    
+    <!-- Menu Button  -->
+    <div id="menu-btn" class="fa-solid fa-bars"></div>
+    <!-- Menu Button Ends  -->
 
     <!-- Header -->
-    <div class="header">
+    <div id="header" class="header">
         <div class="header__image">
             <img src="https://i.pinimg.com/originals/a5/80/9e/a5809ef81d24ec1457ecfaa4414194b3.jpg"
-                alt="womens clip art">
+            alt="womens clip art">
         </div>
         <div class="header__content">
             <div class="header__content-main">
@@ -123,7 +126,7 @@
     <!-- Hounarables Ends -->
 
     <!-- About the Conference  -->
-    <div class="conf">
+    <div id="about" class="conf">
         <div class="conf__container-about">
             <h3 class="conf-title">About the Conference</h3>
             <p class="conf-about">
@@ -205,7 +208,7 @@
     <!-- Objectives and Outcomes Ends -->
 
     <!-- Conference Topics -->
-    <div class="conf__topics">
+    <div id="topics" class="conf__topics">
         <div class="conf__topics-container">
             <h3 class="conf__topics-title">Conference Topics</h3>
             <p class="conf__topics-des">
@@ -278,7 +281,7 @@
     <!-- Conference Topics Ends -->
 
     <!-- Important Dates  -->
-    <div class="dates">
+    <div id="timeline" class="dates">
         <div class="dates-container">
             <h3 class="dates__title">Important Dates</h3>
             <section class="timeline-section">
@@ -331,5 +334,9 @@
 
     </div>
 
+    <!-- Script Tag -->
+    <script src="https://kit.fontawesome.com/13e80230b6.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <!-- Script Tag Ends  -->
 </body>
 </html>

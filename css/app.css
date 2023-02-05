@@ -53,28 +53,83 @@ ol {
     margin: 1em;
 }
 
-.nav{
-    width: 100%;
-    height: 60px;
+#menu-btn{
+    font-size: 1.2rem;
+    background-color: var(--lightbg);
+    display: grid;
+    place-items: center;
+    position: fixed;
+    right: 4%;
+    top: 5%;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    z-index: 15;
 }
 
-.nav__list{
+#menu-btn:hover{
+    background-color: white;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+#menu-btn.fa-xmark{
+    transform: rotate(180deg);
+    background-color: var(--darkbg);
+    color: white;
+}
+
+.nav{
     display: flex;
-    height: 100%;
-    list-style: none;
+    position: fixed;
+    top: 0;
+    left: 0;
     justify-content: center;
     align-items: center;
-    gap: 2em;
+    flex-direction: column;
+    background-color: var(--lightbg);
+    width: 100%;
+    height: 100%;
+    z-index: 14;
+    font-size: 2rem;
+    text-transform: uppercase;
+    clip-path: circle(0% at 95.3% 8.5%);
 }
 
-.nav__listItem{
-    font-size: 1.5rem;
+.nav.active{
+    clip-path: circle(140% at 95.3% 8.5%);
+    transition: all 0.4s ease-in-out;
 }
 
-.nav__listItem a{
+.nav a{
     text-decoration: none;
-    color: var(--blue);
-    font-weight: bolder;
+    color: var(--darkbg);
+    padding: 0.4em 0;
+}
+
+.nav a::before{
+    content: attr(data-text);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    color: var(--darkbg);
+    font-weight: bold;
+    pointer-events: none;
+    letter-spacing: 0.4em;
+    opacity: 0;
+    z-index: 13;
+}
+
+.nav a:hover::before{
+    letter-spacing: 0em;
+    opacity: 0.1;
+    transition: all 0.3s ease-out;
 }
 
 .header{
@@ -500,6 +555,17 @@ ol {
 	font-weight: 500;
 }
 
+/* About HTML CSS */
+
+.aboutOrg-title, .aboutClg-title, .mission-title, .vision-title{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--blue);
+}
+
+/* About HTML CSS Ends  */
+
+
 /* Media Queries */
 
 @media screen and (max-width: 895px) {
@@ -571,7 +637,7 @@ ol {
     }
 
     .header__content-main{
-        top: 2%;
+        top: 1%;
     }
 
     .dates-container{
@@ -579,7 +645,7 @@ ol {
     }
 
     .header__content-secondary{
-        bottom: 3.5%;
+        bottom: 2.8%;
     }
 
     .header__content-subtitle{
