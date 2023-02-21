@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
 const Organiser = () => {
@@ -80,6 +81,8 @@ const Organiser = () => {
         </ol>
     </div>
     {/* Mission Ends */}
+
+    <Footer/>
 
     </>
   )

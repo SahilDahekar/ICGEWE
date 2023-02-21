@@ -11,6 +11,12 @@ const Main = () => {
         <div class="header__image">
             <img src="https://i.pinimg.com/originals/a5/80/9e/a5809ef81d24ec1457ecfaa4414194b3.jpg"
             alt="womens clip art"/>
+            {/* <img src="https://mintedutech.com/wp-content/uploads/2022/01/gender-equality-vector.png"
+            alt="womens clip art"/> */}
+            {/* <img src="https://img.freepik.com/free-vector/flat-international-women-s-day-illustration_23-2148863941.jpg?w=740&t=st=1676922101~exp=1676922701~hmac=ca94ae1dbd04ce090903d43a9f017f083b64d5e707308fc9bfaa829ca86e81e6"
+            alt="womens clip art"/> */}
+            {/* <img src="./images/ICEWE.png" alt="Womens clip art" /> */}
+            {/* <img src="https://img.freepik.com/free-vector/girl-power-background_23-2147976129.jpg?w=740&t=st=1676922374~exp=1676922974~hmac=ca57d8fa78a10c5a8a836627f65751008aff72db574c1d97e3a88a7d2724c81c" alt="" /> */}
         </div>
         <div class="header__content">
             <div class="header__content-main">
@@ -65,6 +71,11 @@ const Main = () => {
                             PVG's COET & GKP(W)IM, Pune</p>
                     </div>
                     <div class="hounarables__primary__member">
+                        <h4 class="hounarables__primary__member-name">Hon. Prof. Sanjeev Sonawane</h4>
+                        <p class="hounarables__primary__member-position">Pro-Vice-Chancellor<br/>
+                            SPPU</p>
+                    </div>
+                    <div class="hounarables__primary__member">
                         <h4 class="hounarables__primary__member-name">Hon. Prof. R.G. Kaduskar</h4>
                         <p class="hounarables__primary__member-position">Director, PVG's COET & GKP(W)IM, Pune</p>
                     </div>
@@ -75,26 +86,65 @@ const Main = () => {
                     <h3 class="hounarables__secondary__member-title">Patron</h3>
                     <div>
                         <h4 class="hounarables__secondary__member-name">Dr. M.R. Tarambale</h4>
-                        <p class="hounarables__secondary__member-position">In-charge Principal</p>
+                        <p class="hounarables__secondary__member-position">In-charge Principal <br/>
+                            PVG's COET & GKP(W)IM, Pune</p>
                     </div>
                 </div>
                 <div class="hounarables__secondary__member">
                     <h3 class="hounarables__secondary__member-title">Convener</h3>
                     <div>
                         <h4 class="hounarables__secondary__member-name">Dr. Y.B. Thakare</h4>
-                        <p class="hounarables__secondary__member-position">Head, Dept. of E&TC</p>
+                        <p class="hounarables__secondary__member-position">Head, Department of E&TC <br/>
+                            PVG's COET & GKP(W)IM, Pune</p>
+                    </div>
+                </div>
+                <div class="hounarables__secondary__member">
+                    <h3 class="hounarables__secondary__member-title">Co-Convener</h3>
+                    <div>
+                        <h4 class="hounarables__secondary__member-name">Dr. Geeta Shinde</h4>
+                        <p class="hounarables__secondary__member-position">Associate Professor <br/>
+                            Department of Education & Extension, SPPU</p>
                     </div>
                 </div>
                 <div class="hounarables__secondary__member">
                     <h3 class="hounarables__secondary__member-title">Coordinator</h3>
                     <div>
-                        <h4 class="hounarables__secondary__member-name">Dr. P.S. Deshpande</h4>
+                        <h4 class="hounarables__secondary__member-name">Prof. P.S. Deshpande</h4>
+                        <p class="hounarables__secondary__member-position">Department of E&TC<br/>
+                            PVG's COET & GKP(W)IM, Pune</p>
                     </div>
                 </div>
                 <div class="hounarables__secondary__member">
                     <h3 class="hounarables__secondary__member-title">Co-coordinator</h3>
                     <div>
-                        <h4 class="hounarables__secondary__member-name">Prof. S.R. Litke</h4>
+                        <h4 class="hounarables__secondary__member-name">Dr. S.R. Litke</h4>
+                        <p class="hounarables__secondary__member-position">Department of E&TC<br/>
+                            PVG's COET & GKP(W)IM, Pune</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hounarables__primary">
+                <h3 class="hounarables__primary-title">Keynote Speakers</h3>
+                <div class="hounarables__primary__members">
+                    <div class="hounarables__primary__member">
+                        <h4 class="hounarables__primary__member-name">Dr. Alka Chopra</h4>
+                        <p class="hounarables__primary__member-position">President at Soul Body Healing Center,<br/>
+                            Founder Global Women Power</p>
+                    </div>
+                    <div class="hounarables__primary__member">
+                        <h4 class="hounarables__primary__member-name">Hon. Prof. Sanjeev Sonawane</h4>
+                        <p class="hounarables__primary__member-position">Pro-Vice-Chancellor<br/>
+                            SPPU</p>
+                    </div>
+                    <div class="hounarables__primary__member">
+                        <h4 class="hounarables__primary__member-name">Dr. Neeta Inamdar</h4>
+                        <p class="hounarables__primary__member-position">Professor and Head <br/>
+                            Manipal Academy of Higher Education(MAHE)</p>
+                    </div>
+                    <div class="hounarables__primary__member">
+                        <h4 class="hounarables__primary__member-name">Priyadarshani Karve</h4>
+                        <p class="hounarables__primary__member-position">Managing director, <br/>
+                            Samuchit Enviro Tech</p>
                     </div>
                 </div>
             </div>
@@ -196,62 +246,65 @@ const Main = () => {
             </p>
             <ol class="conf__topics-list">
                 <li class="conf__topics-item">
+                    NextGen Women: Challenges and opportunities
+                </li>
+                <li class="conf__topics-item">
+                    Role of women in nation development
+                </li>
+                <li class="conf__topics-item">
                     Women Empowerment: Challenges in rural and urban area
+                </li>
+                <li class="conf__topics-item">
+                    Role of women in education and research
                 </li>
                 <li class="conf__topics-item">
                     Role of women in economic growth
                 </li>
                 <li class="conf__topics-item">
-                    Gender Equality : Social and Economical aspects
-                </li>
-                <li class="conf__topics-item">
-                    Gender Equity & Gender Sensitization
-                </li>
-                <li class="conf__topics-item">
-                    Policies for women empowerment in different countries
-                </li>
-                <li class="conf__topics-item">
-                    Women and Health
-                </li>
-                <li class="conf__topics-item">
-                    Human rights for women
-                </li>
-                <li class="conf__topics-item">
                     Women in decision making
                 </li>
                 <li class="conf__topics-item">
-                    Gender equality in social participation
-                </li>
-                <li class="conf__topics-item">
-                    Gender equality in political participation and decision making
-                </li>
-                <li class="conf__topics-item">
-                    Entrepreneurial opportunities for women
-                </li>
-                <li class="conf__topics-item">
-                    Corporate leadership for gender equality
-                </li>
-                <li class="conf__topics-item">
-                    Feminism in Global Scenario
-                </li>
-                <li class="conf__topics-item">
-                    Post pandemic women empowerment
-                </li>
-                <li class="conf__topics-item">
-                    Women in research field
-                </li>
-                <li class="conf__topics-item">
-                    Gender equality plans and strategies in research
-                </li>
-                <li class="conf__topics-item">
-                    Gender equality plans in institutions
+                    Women Entrepreneurship: Challenges and opportunities
                 </li>
                 <li class="conf__topics-item">
                     Women and cyber security
                 </li>
                 <li class="conf__topics-item">
-                    Gender equality and sustainable development
+                    Feminism in Global scenario
                 </li>
+                <li class="conf__topics-item">
+                    Human rights for women
+                </li>
+                <li class="conf__topics-item">
+                    Women and Health
+                </li>
+                <li class="conf__topics-item">
+                    Cultural heritage and woman
+                </li>
+                <li class="conf__topics-item">
+                    Post pandemic women empowerment
+                </li>
+                <li class="conf__topics-item">
+                    Policies for women empowerment in different countries
+                </li>
+                <li class="conf__topics-item">
+                    Gender Equality: Social and economical aspects
+                </li>
+                <li class="conf__topics-item">
+                    Gender equality and Gender Sensitization
+                </li>
+                <li class="conf__topics-item">
+                    Gender equality in political participation and decision-making
+                </li>
+                <li class="conf__topics-item">
+                   Corporate leadership for gender equality
+                </li>
+                <li class="conf__topics-item">
+                    Gender equality Plans and strategies
+                </li> 
+                <li class="conf__topics-item">
+                    Success stories of different countries on Women Empowerment and gender Equality
+                </li>                                                                                                                                                                       
             </ol>
         </div>
     </div>
