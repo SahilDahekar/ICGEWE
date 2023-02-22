@@ -9,11 +9,14 @@ const Main = () => {
     {/* Header  */}
     <div id="header" class="header">
         <div class="header__image">
+            <img src="https://img.freepik.com/premium-vector/concept-gender-equality-with-gender-symbols_99660-146.jpg?w=740"
+            alt="womens clip art"/>
+            {/* <img src="https://img.freepik.com/free-photo/colorful-equal-rights-symbol-concept_23-2148415324.jpg?w=740&t=st=1677084577~exp=1677085177~hmac=625f712b6a8ebf867914d43b5470751501741bb32ddf903a3b73acabf99f8198" alt="womens clip art" /> */}
             <img src="https://i.pinimg.com/originals/a5/80/9e/a5809ef81d24ec1457ecfaa4414194b3.jpg"
             alt="womens clip art"/>
-            {/* <img src="https://mintedutech.com/wp-content/uploads/2022/01/gender-equality-vector.png"
+            {/* <img src="https://img.freepik.com/premium-vector/gender-equality-isometric-concept-with-male-female-sign_106788-1532.jpg?w=740"
             alt="womens clip art"/> */}
-            {/* <img src="https://img.freepik.com/free-vector/flat-international-women-s-day-illustration_23-2148863941.jpg?w=740&t=st=1676922101~exp=1676922701~hmac=ca94ae1dbd04ce090903d43a9f017f083b64d5e707308fc9bfaa829ca86e81e6"
+            {/* <img src="https://mintedutech.com/wp-content/uploads/2022/01/gender-equality-vector.png"
             alt="womens clip art"/> */}
             {/* <img src="./images/ICEWE.png" alt="Womens clip art" /> */}
             {/* <img src="https://img.freepik.com/free-vector/girl-power-background_23-2147976129.jpg?w=740&t=st=1676922374~exp=1676922974~hmac=ca57d8fa78a10c5a8a836627f65751008aff72db574c1d97e3a88a7d2724c81c" alt="" /> */}
@@ -127,21 +130,33 @@ const Main = () => {
                 <h3 class="hounarables__primary-title">Keynote Speakers</h3>
                 <div class="hounarables__primary__members">
                     <div class="hounarables__primary__member">
+                        <div class="org__image">
+                            <img src="./images/keynote3.png" alt="Dr. Alka Chopra image"/>
+                        </div>
                         <h4 class="hounarables__primary__member-name">Dr. Alka Chopra</h4>
                         <p class="hounarables__primary__member-position">President at Soul Body Healing Center,<br/>
                             Founder Global Women Power</p>
                     </div>
                     <div class="hounarables__primary__member">
+                        <div class="org__image">
+                            <img src="./images/keynote1.png" alt="Hon. Prof. Sanjeev Sonawane image"/>
+                        </div>
                         <h4 class="hounarables__primary__member-name">Hon. Prof. Sanjeev Sonawane</h4>
                         <p class="hounarables__primary__member-position">Pro-Vice-Chancellor<br/>
                             SPPU</p>
                     </div>
                     <div class="hounarables__primary__member">
+                        <div class="org__image">
+                            <img src="./images/keynote4.png" alt="Dr. Neeta Inamdar image"/>
+                        </div>
                         <h4 class="hounarables__primary__member-name">Dr. Neeta Inamdar</h4>
                         <p class="hounarables__primary__member-position">Professor and Head <br/>
                             Manipal Academy of Higher Education(MAHE)</p>
                     </div>
                     <div class="hounarables__primary__member">
+                        <div class="org__image">
+                            <img src="./images/keynote2.png" alt="Priyadarshani Karve image"/>
+                        </div>
                         <h4 class="hounarables__primary__member-name">Priyadarshani Karve</h4>
                         <p class="hounarables__primary__member-position">Managing director, <br/>
                             Samuchit Enviro Tech</p>
