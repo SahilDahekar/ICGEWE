@@ -1,5 +1,5 @@
 import React from 'react';
-import { HiOutlineExternalLink, HiOutlineMailOpen, HiOutlineGlobeAlt } from "react-icons/hi";
+import { HiOutlineExternalLink, HiOutlineMailOpen, HiOutlineGlobeAlt , HiOutlineLocationMarker } from "react-icons/hi";
 
 const Footer = () => {
   return (
@@ -10,10 +10,11 @@ const Footer = () => {
                 <a className="register-link" target="_blank" rel='noopener noreferrer' href="https://www.pvgcoet.ac.in/"><HiOutlineGlobeAlt className="icon"/><p>www.pvgcoet.ac.in</p></a>
                 <a className="register-link" href="mailto:conference_entc@pvgcoet.ac.in"><HiOutlineMailOpen className="icon"/><p>conference_entc@pvgcoet.ac.in</p></a>
                 <a className="register-link" target="_blank" href="https://forms.gle/R5BQ8yxsarR1dyu58"><HiOutlineExternalLink className="icon"/><p>register here </p></a>
+                <a className="register-link address" target="_blank" href="https://goo.gl/maps/CUstR9sPHEUHRjD68"><HiOutlineLocationMarker className="icon"/><p>44, Vidya Nagari, Shivdarshan, Parvati,<br/> Pune - 411009 Maharashtra - India</p></a>
             </div>
         </div>
         <div className="footer__copyright">
-            <p className="footer__copyright">Copyright ©2023 <br/> All Rights Reserved Department of E&TC PVGCOET</p>
+            <p className="footer__copyright">Copyright ©2023 <br/> All Rights Reserved Department of E&TC PVG's COET & GKP(W)IM</p>
         </div>
     </footer>
   )

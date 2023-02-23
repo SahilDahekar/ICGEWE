@@ -7,19 +7,12 @@ const Main = () => {
     <>
 
     {/* Header  */}
-    <div id="header" class="header">
+    <div id="header" name="header" class="header">
         <div class="header__image">
-            <img src="https://img.freepik.com/premium-vector/concept-gender-equality-with-gender-symbols_99660-146.jpg?w=740"
-            alt="womens clip art"/>
-            {/* <img src="https://img.freepik.com/free-photo/colorful-equal-rights-symbol-concept_23-2148415324.jpg?w=740&t=st=1677084577~exp=1677085177~hmac=625f712b6a8ebf867914d43b5470751501741bb32ddf903a3b73acabf99f8198" alt="womens clip art" /> */}
+            <img src="./images/gender_equality.jpg"
+            alt="gender equality"/>
             <img src="https://i.pinimg.com/originals/a5/80/9e/a5809ef81d24ec1457ecfaa4414194b3.jpg"
-            alt="womens clip art"/>
-            {/* <img src="https://img.freepik.com/premium-vector/gender-equality-isometric-concept-with-male-female-sign_106788-1532.jpg?w=740"
-            alt="womens clip art"/> */}
-            {/* <img src="https://mintedutech.com/wp-content/uploads/2022/01/gender-equality-vector.png"
-            alt="womens clip art"/> */}
-            {/* <img src="./images/ICEWE.png" alt="Womens clip art" /> */}
-            {/* <img src="https://img.freepik.com/free-vector/girl-power-background_23-2147976129.jpg?w=740&t=st=1676922374~exp=1676922974~hmac=ca57d8fa78a10c5a8a836627f65751008aff72db574c1d97e3a88a7d2724c81c" alt="" /> */}
+            alt="womens empowerment clip art"/>
         </div>
         <div class="header__content">
             <div class="header__content-main">
@@ -30,7 +23,10 @@ const Main = () => {
                 </h2>
                 <p class="header__content-subtitle">Feminism isn't about making women stronger. Women are already
                     strong, it's about changing the way the world perceives that strength.</p>
-                <a class="reg-but" target="_blank" href="https://forms.gle/R5BQ8yxsarR1dyu58">Register</a>
+                <div className="reg-con">
+                    <a class="reg-but" target="_blank" href="https://forms.gle/R5BQ8yxsarR1dyu58">Register</a>
+                    <a class="reg-but" target="_blank" href="https://docs.google.com/document/d/1GIGnKaWOFi6grgo1nHUPf_-Tz4bMLUg5/edit?usp=sharing&ouid=114215246553845804215&rtpof=true&sd=true">Paper Template</a>
+                </div>
             </div>
             <div class="header__content-secondary">
                 <p class="header__content-date"><FaCalendar className="icon"/><span> 8<sup>th</sup>,
@@ -56,7 +52,11 @@ const Main = () => {
                     NAAC Second
                     Cycle 'A' Grade</span>
             </h2>
-            <p class="org__name-address">44, Vidya Nagari, Shivdarshan, Parvati, Pune - 411009 Maharashtra - India</p>
+            <p className="org__association-line1">In Association With</p>
+            <h3 className="org__association">
+                Department of Education & Extension<br/> Savitribai Phule Pune University
+            </h3>
+            {/* <p class="org__name-address">44, Vidya Nagari, Shivdarshan, Parvati, Pune - 411009 Maharashtra - India</p> */}
         </div>
     </div>
     {/* Organised by  */}
@@ -118,7 +118,7 @@ const Main = () => {
                     </div>
                 </div>
                 <div class="hounarables__secondary__member">
-                    <h3 class="hounarables__secondary__member-title">Co-coordinator</h3>
+                    <h3 class="hounarables__secondary__member-title">Co-Coordinator</h3>
                     <div>
                         <h4 class="hounarables__secondary__member-name">Dr. S.R. Litke</h4>
                         <p class="hounarables__secondary__member-position">Department of E&TC<br/>
@@ -131,19 +131,19 @@ const Main = () => {
                 <div class="hounarables__primary__members">
                     <div class="hounarables__primary__member">
                         <div class="org__image">
-                            <img src="./images/keynote3.png" alt="Dr. Alka Chopra image"/>
-                        </div>
-                        <h4 class="hounarables__primary__member-name">Dr. Alka Chopra</h4>
-                        <p class="hounarables__primary__member-position">President at Soul Body Healing Center,<br/>
-                            Founder Global Women Power</p>
-                    </div>
-                    <div class="hounarables__primary__member">
-                        <div class="org__image">
                             <img src="./images/keynote1.png" alt="Hon. Prof. Sanjeev Sonawane image"/>
                         </div>
                         <h4 class="hounarables__primary__member-name">Hon. Prof. Sanjeev Sonawane</h4>
                         <p class="hounarables__primary__member-position">Pro-Vice-Chancellor<br/>
                             SPPU</p>
+                    </div>
+                    <div class="hounarables__primary__member">
+                        <div class="org__image">
+                            <img src="./images/keynote3.png" alt="Dr. Alka Chopra image"/>
+                        </div>
+                        <h4 class="hounarables__primary__member-name">Dr. Alka Chopra</h4>
+                        <p class="hounarables__primary__member-position">President at Soul Body Healing Center,<br/>
+                            Founder Global Women Power</p>
                     </div>
                     <div class="hounarables__primary__member">
                         <div class="org__image">
@@ -168,7 +168,7 @@ const Main = () => {
     {/* Hounarables Ends */}
 
     {/* About the Conference  */}
-    <div id="about" class="conf">
+    <div id="about" name="about" class="conf">
         <div class="conf__container-about">
             <h3 class="conf-title">About the Conference</h3>
             <p class="conf-about">
@@ -333,9 +333,9 @@ const Main = () => {
                 <div class="timeline-items">
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-date">February 15<sup>th</sup>, 2023 <b>(till 6pm)</b></div>
+                        <div class="timeline-date">February 25<sup>th</sup>, 2023 <b>(till 6pm)</b></div>
                         <div class="timeline-content">
-                            <h3>Full Lenght Paper Submission (in conference format)</h3>
+                            <h3>Full Lenght Paper Submission (in <a target="_blank" href="https://docs.google.com/document/d/1GIGnKaWOFi6grgo1nHUPf_-Tz4bMLUg5/edit?usp=sharing&ouid=114215246553845804215&rtpof=true&sd=true">conference format</a>)</h3>
                         </div>
                     </div>
                     <div class="timeline-item">
