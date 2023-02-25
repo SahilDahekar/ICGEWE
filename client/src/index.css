@@ -314,7 +314,7 @@ ol {
 }
 
 .org__association-line1{
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: bold;
   padding: 1em 0;
   color: var(--blue)
@@ -346,13 +346,22 @@ ol {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 1em;
+  gap: 1.3em;
   place-items: center;
   padding: 1em 0;
   margin-bottom: 1.5em;
 }
 
-.hounarables__primary__member , .hounarables__secondary__member {
+.hounarables__keynote__members{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1em;
+  place-items: center;
+  padding: 2em 0;
+}
+
+.hounarables__primary__member , .hounarables__secondary__member , .hounarables__keynote__member {
   max-width: 340px;
 }
 
@@ -361,12 +370,19 @@ ol {
   grid-column-end:   3;
 }
 
-.hounarables__primary:nth-of-type(1) .hounarables__primary__member:nth-of-type(3){
+.hounarables__primary__member:nth-of-type(3){
   grid-column-start: 1;
   grid-column-end:   3;
 }
 
-.hounarables__primary-title , .hounarables__secondary__member-title{
+.hounarables__keynote__member:nth-of-type(2){
+  grid-row-start: 1;
+  grid-row-end:   3;
+  grid-column-start: 2;
+  grid-column-end:   3;
+}
+
+.hounarables__primary-title , .hounarables__keynote-title , .hounarables__secondary__member-title{
   font-size: 1.75rem;
   color: var(--pink);
 }
@@ -379,7 +395,7 @@ ol {
   margin-bottom: 0.3em;
 }
 
-.hounarables__primary__member-name , .hounarables__secondary__member-name{
+.hounarables__primary__member-name , .hounarables__keynote__member-name , .hounarables__secondary__member-name{
   font-size: 1.3rem;
 }
 
@@ -410,6 +426,7 @@ ol {
   padding: 1.5em 0;
   line-height: 1.5;
   z-index: 10;
+  text-align: justify;
 }
 
 .conf__wrapper{
@@ -631,7 +648,7 @@ ol {
 .timeline-content h3{
   font-size: 1.25rem;
   margin:0 0 0.625em;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   font-weight: 500;
 }
 
@@ -656,15 +673,30 @@ ol {
 }
 
 .footer__container-title{
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  /* padding: 1em 0; */
+  margin-bottom: 1.2em;
 }
 
-.footer__container-links{
+.quick-links-title , .contactUs-title{
+  font-size: 1.1rem;
+  margin: 0 0 0.8em;
+  /* color: var(-); */
+}
+
+.quick-links-content , .contactUs-content{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 0.5em;
+}
+
+.footer__container-links{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5em;
 }
 
 .footer__container-links a{
@@ -733,14 +765,14 @@ ol {
   color: var(--pink);
 }
 
-.about__sppu-des , .about__entc-des , .vision-des, .mission-list , .adv-commitee-list , .about__sppu-des , .about__entc-des{
+.about__sppu-des , .about__entc-des , .vision-des, .mission-list , .adv-commitee-list{
   width: 70%;
   margin: 0 auto;
   padding: 0 1em 2em;
 }
 
-.about__sppu-des , .about__entc-des{
-  text-align: center;
+.about__sppu-des , .about__entc-des , .aboutOrg-des , .aboutClg-des{
+  text-align: justify;
 }
 
 .mission-list , .adv-commitee-list{
@@ -807,9 +839,9 @@ ol {
     flex-direction: column;
   }
 
-  .aboutOrg-des , .aboutClg-des{
-    text-align: center;
-  }
+  /* .aboutOrg-des , .aboutClg-des{
+    text-align: justify;
+  } */
 }
 
 @media screen and (max-width: 640px){
@@ -848,6 +880,10 @@ ol {
   .hounarables__container{
       width: 90%;
   }
+
+  .footer__container{
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 770px){
@@ -867,20 +903,51 @@ ol {
       font-size: 1.15rem;
   }
 
+  .hounarables__keynote__members{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+  }
+
+  .hounarables__keynote__member:nth-of-type(2){
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
   .timeline-items::before{
-  left: 7px;
-}
-.timeline-item:nth-child(odd){
-  padding-right: 0;
-  text-align: left;
-}
-.timeline-item:nth-child(odd),
-.timeline-item:nth-child(even){
-  padding-left: 2.3125em;
-}
-.timeline-dot{
-  left:0;
-}
+    left: 7px;
+  }
+
+  .timeline-item:nth-child(odd){
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even){
+    padding-left: 2.3125em;
+  }
+
+  .timeline-dot{
+    left:0;
+  }
+
+  .footer__container-links{
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+  }
+
+  .address{
+    padding: 1em 0;
+  }
+
+  .quick-links-title , .contactUs-title{
+    text-align: center;
+  } 
+  
+  .quick-links-content , .contactUs-content{
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -931,21 +998,7 @@ ol {
   .conf__container{
       width: 75%;
   }
-
-  .footer__container{
-    flex-direction: column;
-  }
-
-  .footer__container-links{
-    align-items: center;
-    padding: 1em 0;
-  }
-
-  .address{
-    padding: 1em 0;
-  }
   
-
 }
 
 @media screen and (max-width: 480px) {
@@ -994,6 +1047,16 @@ ol {
   .hounarables__primary:nth-of-type(1) .hounarables__primary__member:nth-of-type(3){
     grid-column-start: 1;
     grid-column-end:   2;
+  }
+
+  .hounarables__keynote__members{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(5,1fr);
+  }
+
+  .hounarables__keynote__member:nth-of-type(2){
+    grid-row: 2/3;
+    grid-column: 1/2;
   }
 
 }
@@ -1045,3 +1108,42 @@ ol {
       height: 20vh;
   }
 } */
+
+.floating-nav{
+  position: fixed;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 14;
+  font-size: 1.3rem;
+  font-weight: 500;
+  /* text-transform: lowercase; */
+  background-color: var(--lightbg);
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.floating-nav-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  padding: 0.5em 1.25em;
+}
+
+.floating-nav-link{
+  list-style: none;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.floating-nav-link .item{
+  text-decoration: none;
+  color: var(--darkbg);
+  transition: all 0.3s ease-in-out;
+}
+
+.floating-nav-link .item:hover{
+  color: var(--pink);
+  /* text-decoration: underline; */
+}
