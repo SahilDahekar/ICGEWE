@@ -860,6 +860,50 @@ ol {
 
 /* About HTML CSS Ends  */
 
+.floating-nav{
+  position: fixed;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 14;
+  font-size: 1.3rem;
+  font-weight: 500;
+  /* text-transform: lowercase; */
+  background-color: var(--lightbg);
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: top 0.3s ease-in-out;
+}
+
+.floating-nav.active{
+  top: 3%;
+}
+
+.floating-nav-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  padding: 0.5em 1.25em;
+}
+
+.floating-nav-link{
+  list-style: none;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.floating-nav-link .item{
+  text-decoration: none;
+  color: var(--darkbg);
+  transition: all 0.3s ease-in-out;
+}
+
+.floating-nav-link .item:hover{
+  color: var(--pink);
+  /* text-decoration: underline; */
+}
+
 
 /* Media Queries */
 
@@ -948,6 +992,10 @@ ol {
   .quick-links-content , .contactUs-content{
     align-items: center;
   }
+
+  .floating-nav-list{
+    gap: 0.7em;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -998,7 +1046,17 @@ ol {
   .conf__container{
       width: 75%;
   }
+
+  .floating-nav{
+    display: none;
+  }
   
+}
+
+@media screen and (min-width: 640px){
+  .menu-btn{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1108,42 +1166,3 @@ ol {
       height: 20vh;
   }
 } */
-
-.floating-nav{
-  position: fixed;
-  top: 3%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 14;
-  font-size: 1.3rem;
-  font-weight: 500;
-  /* text-transform: lowercase; */
-  background-color: var(--lightbg);
-  border-radius: 15px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
-.floating-nav-list{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5em;
-  padding: 0.5em 1.25em;
-}
-
-.floating-nav-link{
-  list-style: none;
-  white-space: nowrap;
-  margin: 0;
-}
-
-.floating-nav-link .item{
-  text-decoration: none;
-  color: var(--darkbg);
-  transition: all 0.3s ease-in-out;
-}
-
-.floating-nav-link .item:hover{
-  color: var(--pink);
-  /* text-decoration: underline; */
-}
