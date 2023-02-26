@@ -33,6 +33,7 @@ const Main = () => {
               <a
                 class="reg-but"
                 target="_blank"
+                rel="noreferrer"
                 href="https://forms.gle/R5BQ8yxsarR1dyu58"
               >
                 Register
@@ -40,6 +41,7 @@ const Main = () => {
               <a
                 class="reg-but"
                 target="_blank"
+                rel="noreferrer"
                 href="https://docs.google.com/document/d/1GIGnKaWOFi6grgo1nHUPf_-Tz4bMLUg5/edit?usp=sharing&ouid=114215246553845804215&rtpof=true&sd=true"
               >
                 Paper Template
@@ -203,7 +205,7 @@ const Main = () => {
                 <div class="org__image">
                   <img
                     src="./images/keynote1.png"
-                    alt="Hon. Prof. Sanjeev Sonawane image"
+                    alt="Hon. Prof. Sanjeev Sonawane"
                   />
                 </div>
                 <h4 class="hounarables__keynote__member-name">
@@ -219,7 +221,7 @@ const Main = () => {
                 <div class="org__image">
                   <img
                     src="./images/keynote5.png"
-                    alt="Hon. Prof. Sanjeev Sonawane image"
+                    alt="Hon. Prof. Ujwala Chakradeo"
                   />
                 </div>
                 <h4 class="hounarables__keynote__member-name">
@@ -235,7 +237,7 @@ const Main = () => {
                 <div class="org__image">
                   <img
                     src="./images/keynote3.png"
-                    alt="Dr. Alka Chopra image"
+                    alt="Dr. Alka Chopra"
                   />
                 </div>
                 <h4 class="hounarables__keynote__member-name">
@@ -251,7 +253,7 @@ const Main = () => {
                 <div class="org__image">
                   <img
                     src="./images/keynote4.png"
-                    alt="Dr. Neeta Inamdar image"
+                    alt="Dr. Neeta Inamdar"
                   />
                 </div>
                 <h4 class="hounarables__keynote__member-name">
@@ -266,7 +268,7 @@ const Main = () => {
                 <div class="org__image">
                   <img
                     src="./images/keynote2.png"
-                    alt="Priyadarshani Karve image"
+                    alt="Priyadarshani Karve"
                   />
                 </div>
                 <h4 class="hounarables__keynote__member-name">
@@ -293,11 +295,15 @@ const Main = () => {
             celebrate “International Women's Day” by the Department of
             Electronics & Telecommunication Engineering, PVG's College of
             Engineering and Technology and G.K. Pate (Wani) Institute of
-            Management. The ICGEWE-2023 aims to open a wide online platform to
-            present and share knowledge on best practices, actions, areas of
-            improvement related to Gender Equality and Women Empowerment. This
-            is the third sucessful consecutive year of ICGEWE to celebrate
-            womanhood & Gender equality.
+            Management, Pune and Dept of Education and Extension SPPU Pune. The
+            ICGEWE-2023 aims to open a wide online platform to present and share
+            knowledge on best practices, actions, areas of improvement related
+            to Gender Equality and Women Empowerment. This is the third
+            sucessful consecutive year of ICGEWE to celebrate womanhood & Gender
+            equality by the Department of Electronics & Telecommunication
+            Engineering, PVG's College of Engineering and Technology and G.K.
+            Pate (Wani) Institute of Management, Pune and Dept of Education and
+            Extension SPPU Pune.
           </p>
         </div>
         <svg
@@ -460,6 +466,7 @@ const Main = () => {
                     Full Lenght Paper Submission (in{" "}
                     <a
                       target="_blank"
+                      rel="noreferrer"
                       href="https://docs.google.com/document/d/1GIGnKaWOFi6grgo1nHUPf_-Tz4bMLUg5/edit?usp=sharing&ouid=114215246553845804215&rtpof=true&sd=true"
                     >
                       conference format
