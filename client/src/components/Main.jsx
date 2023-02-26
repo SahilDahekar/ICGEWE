@@ -300,10 +300,7 @@ const Main = () => {
             knowledge on best practices, actions, areas of improvement related
             to Gender Equality and Women Empowerment. This is the third
             sucessful consecutive year of ICGEWE to celebrate womanhood & Gender
-            equality by the Department of Electronics & Telecommunication
-            Engineering, PVG's College of Engineering and Technology and G.K.
-            Pate (Wani) Institute of Management, Pune and Dept of Education and
-            Extension SPPU Pune.
+            equality.
           </p>
         </div>
         <svg
@@ -459,7 +456,7 @@ const Main = () => {
               <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">
-                  February 25<sup>th</sup>, 2023 <b>(till 6pm)</b>
+                  February 28<sup>th</sup>, 2023 <b>(till 6pm)</b>
                 </div>
                 <div class="timeline-content">
                   <h3>
