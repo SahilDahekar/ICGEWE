@@ -267,6 +267,22 @@ const Main = () => {
               <div class="hounarables__keynote__member">
                 <div class="org__image">
                   <img
+                    src="./images/keynote6.png"
+                    alt="Dr. Aishwarya Ashish Patil"
+                  />
+                </div>
+                <h4 class="hounarables__keynote__member-name">
+                  Dr. Aishwarya Ashish Patil
+                </h4>
+                <p class="hounarables__keynote__member-position">
+                  Co-founder and director
+                  <br />
+                  Astral Education
+                </p>
+              </div>
+              <div class="hounarables__keynote__member">
+                <div class="org__image">
+                  <img
                     src="./images/keynote2.png"
                     alt="Priyadarshani Karve"
                   />
@@ -475,7 +491,7 @@ const Main = () => {
               <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">
-                  February 28<sup>th</sup>, 2023 <b>(till 6pm)</b>
+                  March 2<sup>nd</sup>, 2023 <b>(till 6pm)</b>
                 </div>
                 <div class="timeline-content">
                   <h3>Notification of Acceptance of the paper</h3>
@@ -484,7 +500,7 @@ const Main = () => {
               <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">
-                  March 2<sup>th</sup>, 2023 <b>(till 6pm)</b>
+                  March 4<sup>th</sup>, 2023 <b>(till 6pm)</b>
                 </div>
                 <div class="timeline-content">
                   <h3>Camera ready Power Point Presentation (PPTs)</h3>

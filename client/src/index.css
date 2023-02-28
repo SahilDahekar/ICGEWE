@@ -374,13 +374,13 @@ ol {
   grid-column-start: 1;
   grid-column-end:   3;
 }
-
+/* 
 .hounarables__keynote__member:nth-of-type(2){
   grid-row-start: 1;
   grid-row-end:   3;
   grid-column-start: 2;
   grid-column-end:   3;
-}
+} */
 
 .hounarables__primary-title , .hounarables__keynote-title , .hounarables__secondary__member-title{
   font-size: 1.75rem;
