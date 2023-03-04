@@ -91,6 +91,13 @@ const Main = () => {
             Department of Education & Extension
             <br /> Savitribai Phule Pune University
           </h3>
+          <p className="org__association-line2">and</p>
+          <div class="org__image">
+            <img src="./images/rsa1.png" alt="rsa Logo" />
+          </div>
+          <h3 className="org__association">
+            Rajasthan Sociological Association
+          </h3>
           {/* <p class="org__name-address">44, Vidya Nagari, Shivdarshan, Parvati, Pune - 411009 Maharashtra - India</p> */}
         </div>
       </div>

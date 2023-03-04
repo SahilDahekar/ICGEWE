@@ -320,6 +320,13 @@ ol {
   color: var(--blue)
 }
 
+.org__association-line2{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1em 0;
+  color: var(--darkbg);
+}
+
 .hounarables{
   padding: 1em 0 2.5em;
   background-color: var(--lightbg);
