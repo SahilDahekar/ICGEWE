@@ -1,4 +1,5 @@
 # International Conference for Gender Equality and Women Empowerment
+![](https://github.com/SahilDahekar/ICGEWE/assets/97726887/c7b2df24-bfce-498b-afaf-e993e25cf98d)
 
 ## About the Project
 
